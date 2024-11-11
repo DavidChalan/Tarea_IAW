@@ -1,0 +1,14 @@
+/* aside.module.css */
+
+.aside {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .iframe {
+    width: 100%;
+    max-width: 900px; 
+    height: auto;
+  }
+  
