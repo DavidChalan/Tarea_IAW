@@ -1,0 +1,81 @@
+/* HeroesList.css */
+
+.heroes-list {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.heroes-list__title {
+    text-align: center;
+    font-size: 2rem;
+    color: #0044cc;
+    margin-bottom: 1.5rem;
+}
+
+.heroes-list__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heroes-list__table th,
+.heroes-list__table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.heroes-list__table th {
+    background-color: #0044cc;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.heroes-list__table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.heroes-list__table tr:hover {
+    background-color: #e6f0ff;
+    transition: background-color 0.3s ease;
+}
+
+.heroes-list__table td {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.heroes-list__no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+    margin-top: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .heroes-list {
+        padding: 1rem;
+    }
+
+    .heroes-list__table th,
+    .heroes-list__table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .heroes-list__title {
+        font-size: 1.5rem;
+    }
+}
