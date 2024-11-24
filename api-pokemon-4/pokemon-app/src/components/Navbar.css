@@ -1,0 +1,95 @@
+nav {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 0;
+    box-shadow: 4px 4px 8px #000020;
+}
+
+nav li {
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem;
+}
+nav > img.logo { 
+    height: 5rem;
+     width: auto; 
+    }
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+
+nav>svg {
+    height: 3rem;
+    width: auto;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* separacion de los componentes */
+}
+
+.switch>svg {
+    height: 1.5rem;
+    width: auto;
+}
+
+.switch>label {
+    background-color: aliceblue;
+    width: 4rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+
+}
+
+.slider {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: brown;
+    transition: 0.5s;
+}
+
+
+
+.check-switch:checked+.slider {
+    transform: translateX(2.5rem);
+}
+
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        /* Cambiar la dirección del flex a columna en pantallas pequeñas */
+    }
+
+    .nav {
+        flex-direction: column;
+        /* Cambiar la dirección del flex a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .nav li {
+        margin: 0.5rem 0;
+        /* Añadir espacio entre los elementos de la lista en pantallas pequeñas */
+    }
+
+    .switch {
+        margin-top: 1rem102;
+    }
+}

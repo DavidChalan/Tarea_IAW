@@ -1,0 +1,52 @@
+.home-container {
+    /* background-color: #3285cd;  */
+    padding: 20px; 
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto */
+}
+
+.home-pokemon-card {
+    border: 2px solid #ccc; 
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; 
+    margin: 10px auto;
+    width: 200px; 
+    background-color: #f2f2f2; 
+    padding: 5px 0;
+    box-shadow: 4px 4px 4px #21212120;
+    cursor: pointer;
+    transition: 0.3s;
+
+    
+}
+
+.home-pokemon-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 0 #21212170;
+}
+
+
+.home-pokemon-imagen {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Altura de la imagen */
+    margin: 5px 0;
+}
+
+.home-pokemon-titulo {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; 
+    
+}
+
+.home-pokemon-card p {
+    margin: 5px 0; /* Margen entre párrafos */
+}
+
+.home-pokemon-card ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding por defecto */
+}
+
+.home-pokemon-card li {
+    margin: 3px 0; /* Margen entre elementos de la lista */
+}
