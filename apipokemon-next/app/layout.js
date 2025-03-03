@@ -6,6 +6,7 @@ import { Suspense, useState } from "react";
 import { getDictionary } from "@/componentes/diccionario";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "/componentes/NavBar.jsx";
+import SecondNavbar from "./componentes/Secondnavbar";
 
 // estas son font donde más abajo la utilizamos
 const geistSans = localFont({
@@ -42,8 +43,10 @@ export default function Applayout({ children }) {
           />
         </header>
         <NavBar idioma={idioma} changeLanguage={changeLanguage} />
+        <SecondNavbar/>
         {children}
       </body>
     </html>
+    
   );
 }
